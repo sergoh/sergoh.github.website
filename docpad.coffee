@@ -12,16 +12,16 @@ docpadConfig = {
 		# Specify some site properties
 		site:
 			# The production url of our website
-			url: "http://website.com"
+			url: "http://www.sergoh.com"
 
 			# Here are some old site urls that you would like to redirect from
 			oldUrls: [
-				'www.website.com',
+				'www.sergiolopezjr.com',
 				'website.herokuapp.com'
 			]
 
 			# The default title of our website
-			title: "Your Website"
+			title: "SerGOh"
 
 			# The website description (for SEO)
 			description: """
@@ -41,15 +41,15 @@ docpadConfig = {
 
 			# Styles
 			styles: [
-				"//netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css"
+				"/styles/twitter-bootstrap.css"
 				"/styles/style.css"
 			]
 
 			# Scripts
 			scripts: [
+				"//cdnjs.cloudflare.com/ajax/libs/jquery/1.10.2/jquery.min.js"
 				"//cdnjs.cloudflare.com/ajax/libs/modernizr/2.6.2/modernizr.min.js"
-				"//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"
-				"//netdna.bootstrapcdn.com/bootstrap/3.0.0/js/bootstrap.min.js"
+				"/vendor/twitter-bootstrap/dist/js/bootstrap.min.js"
 				"/scripts/script.js"
 			]
 
@@ -95,7 +95,21 @@ docpadConfig = {
 	# =================================
 	# Plugins
 
-	plugins: {}
+	plugins:
+		downloader:
+			downloads: [
+				{
+					name: 'Twitter Bootstrap'
+					path: 'src/files/vendor/twitter-bootstrap'
+					url: 'https://codeload.github.com/twbs/bootstrap/tar.gz/master'
+					tarExtractClean: true
+				}
+			]
+		ghpages:
+        	deployRemote: 'target'
+        	deployBranch: 'master'
+
+
 
 	# =================================
 	# DocPad Events

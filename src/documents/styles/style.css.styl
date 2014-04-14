@@ -1,10 +1,68 @@
 @import 'nib'
 
-.credit
-  margin 20px 0
-
 a, a:link
 	cursor pointer
 
 body
-	padding-top 60px
+/*	padding-top 60px*/
+
+table
+	tfoot, tbody
+		th
+			border-top 1px solid #DDD
+.jumbotronHeader
+	width: 50%
+	margin: 0 auto
+	text-align: center
+.mini-logo
+	background-image: url('/images/icons/sergoh-nav-white.png')
+	width:40px;
+	height:40px
+	padding:0;
+	margin-top:.2em;
+	float:left;
+.navbar-brand-text
+	line-height:50px;
+	color:#FFFFFF;
+	padding-left:.4em;
+	font-family: 'Coda Caption', sans-serif;
+.no-padding
+	padding:0;
+.navbar-nav > li > a {
+	color: #FFFFFF !important;
+	font-family: 'Open Sans', sans-serif;
+}
+.bs-docs-masthead {
+	position: relative;
+	padding: 100px 15px 20px;
+	color: #FFFFFF;
+	text-align: center;
+	text-shadow: 0 1px 0 rgba(0,0,0,.1);
+	background-color: #CD4321;
+	background-repeat: repeat-x;
+}
+.bs-docs-lg{
+	font-size: 2.5em;
+	font-family:'Coda Caption', sans-serif;
+}
+.dot-com
+	font-size:1.6em;
+	font-family:'Coda Caption', sans-serif;
+@media (min-width: 768px) {
+  .bs-docs-lg {
+    font-size: 5.5em;
+  }
+  .dot-com{
+	font-size: 2.6em;
+  }
+}
+.row
+	padding-top:3em;
+	padding-bottom:3em;
+.page-container
+	color:#CD4321
+	left:0
+	right:0
+.page-title
+	text-align:center;
+	font-size:3em;

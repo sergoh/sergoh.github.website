@@ -1,8 +1,6 @@
-# [Twitter Bootstrap](http://getbootstrap.com/) skeleton for [DocPad](https://github.com/bevry/docpad)
-
+# [Bootstrap](http://getbootstrap.com) skeleton for [DocPad](https://github.com/bevry/docpad)
 Simple and flexible HTML, CSS, and Javascript for popular user interface components and interactions.
 
-It started as a [Coffeekup](http://coffeekup.org/) variant of Bevry's Bootstrap skeleton. It uses Coffeekup instead of Eco. I have also updated it to use [Twitter Bootstrap 3](http://getbootstrap.com/getting-started/#migration)
 
 ## Getting Started
 
@@ -11,8 +9,8 @@ It started as a [Coffeekup](http://coffeekup.org/) variant of Bevry's Bootstrap 
 1. Clone the project and run the server
 
 	``` bash
-	git clone git://github.com/lzrski/twitter-bootstrap-coffeekup.docpad.git
-	cd twitter-bootstrap-coffeekup.docpad
+	git clone git://github.com/docpad/twitter-bootstrap.docpad.git
+	cd twitter-bootstrap.docpad
 	npm install
 	docpad run
 	```
@@ -20,6 +18,12 @@ It started as a [Coffeekup](http://coffeekup.org/) variant of Bevry's Bootstrap 
 1. [Open http://localhost:9778/](http://localhost:9778/)
 
 1. Start hacking away by modifying the `src` directory
+
+
+## I'm getting EMFILE errors
+
+[See here for the reason why and the solution](http://docpad.org/docs/troubleshoot#i-m-getting-emfile-too-many-open-files)
+
 
 ## License
 
@@ -33,6 +37,6 @@ If you are wanting to close-source your website, we'd suggest using the followin
 
 	Copyright [Your Name](http://your.website). All rights reserved.
 
-Other included things such as themes and libraries are likely already licensed by their own invidual licenses, so be sure to respect their licenses too.
+Other included things such as themes and libraries are likely already licensed by their own individual licenses, so be sure to respect their licenses too.
 
-Thanks for the DocPad team - we all love you.
+Thanks, the DocPad team loves you.
