@@ -33,7 +33,7 @@
 	<!--[if lt IE 9]>
 		<script async src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
 	<![endif]-->
-
+	<script src='https://cdn.firebase.com/js/client/1.0.11/firebase.js'></script>
 	<!-- Styles -->
 	<%- @getBlock('styles').add(@site.styles).toHTML() %>
 </head>
@@ -51,7 +51,7 @@
 			</div>
 			<div class="navbar-collapse collapse">
 				<ul class="nav navbar-nav navbar-right">
-					<% for document in @getCollection('pages').toJSON(): %>
+					<% for document in @getCollection('pages').findAll({isPage:true}).toJSON(): %>
 						<li
 							typeof="sioc:Page"
 							about="<%= document.url %>"

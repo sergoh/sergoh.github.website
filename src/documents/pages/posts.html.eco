@@ -2,6 +2,7 @@
 title: Posts
 layout: page
 pageOrder: 2
+isPage: true
 ---
 
 <nav class="linklist">
